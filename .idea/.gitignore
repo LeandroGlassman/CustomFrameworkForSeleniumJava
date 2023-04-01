@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Ignore the directory called 'target'
+target/
+
+# Ignore the directory External libraries
+/External Libraries/
