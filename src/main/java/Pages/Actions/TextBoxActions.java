@@ -1,7 +1,6 @@
 package Pages.Actions;
 
 import Pages.Locators.TextBoxLocators;
-import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.WebDriver;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
@@ -44,8 +43,4 @@ public class TextBoxActions {
     public void confirmSubmittedInfo(){
         driver.findElement(TextBoxLocators.ConfirmResult).isDisplayed();
     }
-
-
-
-
 }

@@ -8,7 +8,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class TextBoxSteps {
@@ -16,13 +15,8 @@ public class TextBoxSteps {
     private WebDriver driver;
     private TextBoxActions actions;
 
-//    public TextBoxSteps(){
-//        actions = new TextBoxActions(driver);
-//    }
-
     @Given("A user who want to submit the form in textbox")
     public void userIsInTheCorrectWebsite(){
-//        actions.checkWebsite("Text Box");
           System.out.println("USER IS IN THE CORRECT WEBSITE");
     }
     @When("User complete all the fields")
@@ -48,8 +42,6 @@ public class TextBoxSteps {
         driver = DriverManager.getDriver();
         actions = new TextBoxActions(driver);
         driver.get("https://demoqa.com/text-box");
-//        System.out.println("Clicking textBox");
-//        driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]")).click();
     }
 
     @After
@@ -57,6 +49,4 @@ public class TextBoxSteps {
         driver = DriverManager.getDriver();
         driver.close();
     }
-
-
 }
