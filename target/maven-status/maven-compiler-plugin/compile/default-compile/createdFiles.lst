@@ -1,1 +1,3 @@
+Pages\Actions\TextBoxActions.class
+Pages\Locators\TextBoxLocators.class
 CustomFramework\utils\DriverManager.class
