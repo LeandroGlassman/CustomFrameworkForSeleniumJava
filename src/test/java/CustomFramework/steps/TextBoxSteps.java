@@ -17,7 +17,8 @@ public class TextBoxSteps {
 
     @Given("A user who want to submit the form in textbox")
     public void userIsInTheCorrectWebsite(){
-          System.out.println("USER IS IN THE CORRECT WEBSITE");
+        System.out.println("Checking if user is in the correct website");
+        actions.checkWebsite();
     }
     @When("User complete all the fields")
     public void completeFields(){

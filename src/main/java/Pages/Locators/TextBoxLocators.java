@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class TextBoxLocators {
     // WebElement locators
-    public static final By CheckWebsite = By.xpath("//div[contains(text(),'Text Box')]");
+    public static final By CheckWebsite = By.cssSelector("#userName");
     public static final By FullNameField = By.cssSelector("#userName");
     public static final By EmailField = By.cssSelector("#userEmail");
     public static final By CurrentAddress =By.cssSelector("#currentAddress");
